@@ -1,12 +1,15 @@
 body {
   margin: 0;
-
   font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+  min-height: 100vr;
+
 }
 
 .page {
   width: 1000px;
-  margin: 65px auto 0;
+  margin: 0 auto;
+  padding-top: 65px;
 }
 
 nav {
@@ -17,7 +20,7 @@ nav {
   margin-bottom: 55px;
 }
 
-ul {
+ul {  
   display: flex;
   gap: 48px;
   list-style: none;
@@ -30,8 +33,13 @@ a {
   text-decoration: none;
 }
 
+ul li a {
+  opacity: 0.5;
+}
+
 ul li a:hover {
   font-weight: bold;
+  opacity: 0.5;
 }
 
 h1, ul {
@@ -67,9 +75,27 @@ section p {
   margin: 40px 0;
 }
 
+button:hover{
+    background-color: #4ea788;
+}
+
 button {
+  color: #fff;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
+
+  background: #69b99d;
+  border: 0;
+  padding: 14px 32px 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border-radius: 4px;
+
+  cursor: pointer;
 }
 
 footer {
@@ -83,4 +109,10 @@ footer {
 
 footer a {
   font-weight: bold;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
