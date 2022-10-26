@@ -84,7 +84,6 @@ main {
 }
 
 .card h2 {
-
   position: absolute;
   bottom: 5.2rem;
   left: 2.8rem;
@@ -95,7 +94,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-
 }
 
 .card h2 span {
