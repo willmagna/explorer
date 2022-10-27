@@ -46,7 +46,37 @@ header {
   margin: 10rem 0 8rem;
   font-family: var(--ff-heading);
   text-align: center;
+
+  /*
+  ShortHand
+  animation: topdown 700ms;
+  */
+
+  animation-name: topdown;
+  animation-duration: 700ms;
+
+  /*
+  animation-name: topdown;
+  animation-duration: 700ms;
+  animation-fill-mode: forwards;,
+  animation-direction: reverse; começa de cima para baixo no @keyframe
+  animation-delay: 200ms;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+  
+  quando a animação acada o elemento volta ao seu estado original.
+  */
 }
+
+/*
+quando vc usa o: animation-play-state: paused;
+ai pra ativar quando passar o mouse por exxemplo, vc faz assim
+
+header:hover {
+  animation-play-state: running;
+}
+*/
 
 header p {
   color: var(--fc-secondary);
@@ -69,6 +99,29 @@ header h1 {
 main {
   display: grid;
   gap: 3.2rem;
+
+  /*
+  animation: downtop 700ms 350ms backwards;
+  */
+
+  animation-name: downtop;
+  animation-duration: 700ms;
+  animation-delay: 350ms;
+  animation-fill-mode: backwards;
+
+  /*
+  O backwards inicia com as propriedades de 0%, mas
+  quando a animação acaba ele volta pras configurações
+  padrão setada no css. Ou seja, nesse caso
+  opacity: 1;
+  transform: translateY(0);
+
+  que nada mais é que o default do elemento
+
+  Todas as vezes que vc usar delay, terá de usa backwards
+
+  */
+
 }
 
 .card {
@@ -124,4 +177,32 @@ main {
   /*a tag span não altera o height, então usa-se display: inline-block ou inline-flex*/
   display: inline-flex;
   align-items: center;
+}
+
+@keyframes topdown {
+
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+
+@keyframes downtop {
+
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 }
