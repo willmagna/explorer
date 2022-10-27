@@ -81,6 +81,20 @@ main {
   object-fit: cover;
 
   border-radius: 6px;
+
+  /*a transição deve ser definida aqui.
+  porque no hover quando tira-se o mouse de
+  cima ele não faria a transição.
+  Por causa do opacity adicionado no hover, 
+  tem que colocar all para ele fazer a transição
+  para todos os "elementos"
+  */
+  transition: all 200ms;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  opacity: 0.4;
 }
 
 .card h2 {
