@@ -100,9 +100,7 @@ main {
   display: grid;
   gap: 3.2rem;
 
-  /*
-  animation: downtop 700ms 350ms backwards;
-  */
+  /* animation: downtop 700ms 350ms backwards; */
 
   animation-name: downtop;
   animation-duration: 700ms;
@@ -119,7 +117,6 @@ main {
   que nada mais é que o default do elemento
 
   Todas as vezes que vc usar delay, terá de usa backwards
-
   */
 
 }
@@ -127,6 +124,7 @@ main {
 .card {
   position: relative;
   font-family: var(--ff-heading);
+  transition: all 200ms;
 }
 
 .card img {
@@ -142,13 +140,21 @@ main {
   tem que colocar all para ele fazer a transição
   para todos os "elementos"
   */
-  transition: all 200ms;
+  /*transition: all 200ms;*/
 }
 
+
+.card:hover {
+  transform: scale(1.1);
+  opacity: 0.4;
+}
+
+/*
 .card img:hover {
   transform: scale(1.1);
   opacity: 0.4;
 }
+*/
 
 .card h2 {
   position: absolute;
@@ -205,4 +211,47 @@ main {
     transform: translateY(0);
   }
   
+}
+
+@media (min-width: 700px){
+
+  :root {
+    --fs-heading: 2.6rem;
+  }
+
+  .page {
+    max-width: 117rem;
+    padding: 0 10rem;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+}
+
+@media (min-width: 1000px) {
+
+  main {
+    grid-template-areas: "A B B"
+    "C C D";
+  }
+
+  main div:nth-child(1) {
+   grid-area: A; 
+  }
+
+  main div:nth-child(2) {
+    grid-area: B;
+  }
+
+  main div:nth-child(3) {
+    grid-area: C;
+  }
+
+  main div:nth-child(4) {
+    grid-area: D;
+  }
+
 }
