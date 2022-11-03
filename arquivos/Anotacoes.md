@@ -45,6 +45,17 @@
   * Quando vc faz uma função em maneira de expressão ela não sofre hoisting (elevação)
   * Função é um tipo de dado
 
+  * Executar função dentro de um array
+    arrayName[]();
+
+  * Executar função dentro de um objeto
+    objectName.functionName();
+
+  ## Função autoexecutavel
+    * (function () {
+      console.log('alo')
+    })()
+
   ## Arrow Function
 
    * Função do tipo expression
@@ -71,4 +82,75 @@
   * prototype chain
   * __proto__
 
+# Expressões e Operadores
+  * Expressions
+  * Operators
+    * Binary
+    * Unary
+    * Ternary
+
+# New
+  * left-hand-side expression
+  * criar um novo objeto
+
+# Operadores unários
+  * typeof
+  * delete
+    * pode deletar um atributo do objeto.
+
+
+# Operadores Aritméticos
+  * Multiplicação
+  * Divisão
+  * Soma
+  * Subtração
+
+  * Resto da divisão
+  * Incremento
+  * Decremento
+  * Exponencial
+
+
+* FALSY
+
+  Quando um valor é considerado false em contextos onde um booleano é obrigatório (condicionais e loops). Typecasting.
+
+  * false
+  * 0 
+  * -0
+  * ""
+  * null
+  * undefined
+  * NaN
+
+* TRUTHY
+  Quando um valor é considerado true em contextos onde um booleano é obrigatório (condicionais e loops). Typecasting.
+
+  * true
+  * {}
+  * []
+  * 1
+  * 3.23
+  * "0"
+  * "false"
+  * -1
+  * Infinity
+  * -Infinity
+
+# Operator precedence
+  Precedência de operadores
+
+  Mais importante
   
+  * grouping                    ()
+  * negação e incremento        ! ++ --
+  * multiplicação e divisão     * /
+  * adição e subtração          + - 
+  * relacional                  < <= > >= 
+  * igualdade                   == != === !==
+  * AND                         &&
+  * OR                          ||
+  * condicional                 ?:
+  * assignment (atribuição)     = += -= *=
+
+  Menos importante
