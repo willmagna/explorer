@@ -20,12 +20,12 @@ console.log(person.name);
 console.log(`${person.name} has ${person.age} years old`);
 */
 
-
+/*
 
 
 // ############## Array ##############
 
-/*
+
 const animals = [
   'Lion',
   'Monley',
