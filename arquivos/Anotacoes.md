@@ -154,3 +154,11 @@
   * assignment (atribuição)     = += -= *=
 
   Menos importante
+
+# Estruturas de repetição
+  ## for of
+    * https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/for...of
+    * exemplos: stage04/introducao/estruturaRepeticao.js
+  ## for in
+    * https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/for...in
+    * exemplos: stage04/introducao/estruturaRepeticao.js
