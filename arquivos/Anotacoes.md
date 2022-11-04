@@ -212,3 +212,18 @@
 // pegar somente alguns elementos do array: .slice(1, 3));
 // remover 1 ou mais items em qualquer posição do array: .splice(1, 2);
 // encontrar a posicção de um elemento no array: .indexOf('css');
+
+
+# Aperfeiçoando a resolução de problemas
+
+Perguntas a serem feitas:
+
+1. Quais os dados de entrada que terei? (inputs)
+2. Quais as variáveis?
+3. Qual o caminho ideal?
+4. Qual(is) o(s) caminho(s) alternativo(s)?
+5. Quais tratamentos de dados preciso fazer? (estrutura de dados, funções)
+6. Qual é a saída, ou quais os dados de saída, esperada? (outputs)
+
+
+# Ferramentas da linguagem que abordaremos
