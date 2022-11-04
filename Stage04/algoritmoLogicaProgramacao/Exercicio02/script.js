@@ -43,8 +43,8 @@ function registerStudent(){
 
   studentList.push(student);
 
-  console.log(student);
-  console.log(studentList);
+  //console.log(student);
+  //console.log(studentList);
 
 }
 
