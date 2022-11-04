@@ -193,3 +193,22 @@
     * Você precisa ver código;
     * Tentar entender código dos outros;
     * Aprenderemos outras maneiras de pensar no problema;
+
+
+# Estrutura de daods
+- Organização e gerenciamento dos dados
+- Melhor eficiência do código
+
+[] Estruturas de repetição
+[] Vetores (Arrays)
+
+  ## Arrays
+
+
+//adicionar um item no fim: .push("");
+//adicionar no começo: .unshift("");
+//remover do fim: .pop();
+//remover do começo: .shift();
+// pegar somente alguns elementos do array: .slice(1, 3));
+// remover 1 ou mais items em qualquer posição do array: .splice(1, 2);
+// encontrar a posicção de um elemento no array: .indexOf('css');
