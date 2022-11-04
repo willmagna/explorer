@@ -27,7 +27,7 @@ let tryCount = 0;
 
 let randomNumber = Math.floor(Math.random() * 11); //// Returns a random integer from 0 to 10:
 
-//console.log(`Ramdom number ${randomNumber}`);
+console.log(`Ramdom number ${randomNumber}`);
 
 while(!hit){
 
@@ -38,7 +38,7 @@ while(!hit){
   numberInput = Number(numberInput);
   
   if(numberInput === randomNumber){
-    alert(`Parabéns! Você advinhou o número em ${tryCount} tentarivas`)
+    alert(`Parabéns! Você advinhou o número em ${tryCount} ${tryCount > 1 ? "tentativas" : "tentativa "}. O número gerado pelo sistema foi o ${randomNumber}.`);
     hit = true;
   }else{
     alert(`Errouuuuuuu, tente novamente`);
