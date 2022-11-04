@@ -20,3 +20,32 @@
  * Substitua o "x" da mensagem, pelo numero de tentativas
  * 
  */
+
+let numberInput;
+let hit = false;
+let tryCount = 0;
+
+let randomNumber = Math.floor(Math.random() * 11); //// Returns a random integer from 0 to 10:
+
+//console.log(`Ramdom number ${randomNumber}`);
+
+while(!hit){
+
+  tryCount++;
+  
+  numberInput = prompt("Adivinhe o número que estou pensando? Está entre 0 e 10");
+  if(numberInput === null) break;
+  numberInput = Number(numberInput);
+  
+  if(numberInput === randomNumber){
+    alert(`Parabéns! Você advinhou o número em ${tryCount} tentarivas`)
+    hit = true;
+  }else{
+    alert(`Errouuuuuuu, tente novamente`);
+    hit = false;
+  }
+
+  //console.log(`TryCount: ${tryCount}`);
+  //console.log(`Hit: ${hit}`);
+
+}
