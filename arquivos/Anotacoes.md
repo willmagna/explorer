@@ -232,3 +232,58 @@ Perguntas a serem feitas:
 [] arrays e funções de arrays
 [] condicional switch e if/else
 [] template literals (string)
+
+
+# Estrutura de dados
+  1. Array
+    const myArray = [1, 2, "a", "b", true];
+  
+  2. Object
+    const myObject = { property: "value" };
+
+# Funções
+
+  1. Named
+
+    function myFunction() {}
+
+  2. Anonymous
+
+    const myFunction = function() {}
+
+  3. Arrow
+
+    const myFunction = () => {}
+
+  4. Arguments & return
+
+    function sum(a, b){
+      return a+b;
+    }
+  
+    const sum = (a, b) => a + b;
+
+  //Execução
+    myFunction();
+    const mySum = sum(1, 2);
+  
+
+# Estrutura de repetição
+
+1. while
+
+  let play = true
+  while(play){}
+
+2. for (tradicional)
+
+  let text = "abc";
+  for(let i=0; i < text.length; i++){
+    alert(text[i]);
+  }  
+
+3. for...of
+
+  for(let char of text){
+    alert(char)
+  }
