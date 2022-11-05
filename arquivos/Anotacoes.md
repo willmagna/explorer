@@ -345,3 +345,6 @@ Podemos alterar estilos ou adicionar classes em elementos
 
 * Alternando entre classes
   h1.classList.toggle('hide');
+
+# Input
+* Todo o input pega o valor através do value
