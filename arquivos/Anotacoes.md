@@ -287,3 +287,61 @@ Perguntas a serem feitas:
   for(let char of text){
     alert(char)
   }
+
+
+# DOM (Document Object Model)
+* Document Object Model
+  - Modelagem do documento como objeto JavaScript
+* Representação do HTML em objetos JavaScript
+  - Atributos (propriedades) e métodos (funcionalidades)
+* Criado pelo navegador (browser)
+  - É uma interface (API) usada no navegador
+  - A DOM é uma API (Application programming interface)
+
+Para que serve?
+
+* Javascript usa a DOM para se conectar ao HTML
+  - DOM não é o JavaScript
+  - A DOM é a repressentação do HTML em formato de um objeto JavaScript
+
+* Manipular o HTML com Javascript
+  - Modificar o HTML, os estilos e até disparar ações
+
+## Dev Tools
+Através das ferramentas do desenvolvedor Det Tools, observaremos a DOM.
+* window
+  - Objeto global presente em qualquer página no navegador
+* document
+  - Representação do documento
+
+## Element e Node
+As tags HTML, quando usadas pela DOM, podemos chamar de node (nó) ou de element (elemento).
+
+O elemento é a representação do HTML ele é um objeto tbm.
+
+## Recebendo e modificando valores
+Podemos pegar qualquer valor das tags e, também, alterar eles.
+
+* innerText
+  console.log(h1.innerText);
+
+* innerHTML
+  console.log(h1.innerHTML);
+  
+* alterando o texto (ou o HTML)
+  h1.innerText = "Novo título";
+
+## Alterando estilos
+Podemos alterar estilos ou adicionar classes em elementos
+
+* Alterando o estilo
+  h1.style.backgroundColor = "Red";
+
+* Adicionando Classes
+  h1.classList.add('hide');
+
+* Removendo Classes
+  h1.classList.remove('hide');
+
+* Alternando entre classes
+  h1.classList.toggle('hide');
