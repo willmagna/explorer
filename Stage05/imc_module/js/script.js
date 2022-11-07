@@ -6,16 +6,15 @@ const form = document.querySelector('form');
 const inputWeight = document.querySelector('#weight');
 const inputHeight = document.querySelector('#height');
 
-
 form.onsubmit = (event) => {
   event.preventDefault();
 
   const weight = inputWeight.value;
   const height = inputHeight.value;
 
-  const showAlertError = notANumber(weight) || notANumber(height);
+  const weightOrHeightIsNotANumber = notANumber(weight) || notANumber(height);
 
-  if (showAlertError) {
+  if (weightOrHeightIsNotANumber) {
     AlertError.open();
     return;
   }
@@ -23,8 +22,21 @@ form.onsubmit = (event) => {
   AlertError.close();
 
   const resultIMC = bmiCalculation(weight, height);
-  const message = `Seu IMC é de ${resultIMC}`;
+  displayResultMessage(resultIMC);
+  
+}
+
+function displayResultMessage(result){
+  const message = `Seu IMC é de ${result}`;
 
   Modal.message.innerText = message;
   Modal.open();
 }
+
+// Fechar a janela de eroo ao gisitar no campo
+// evento é de nome input
+//inputWeight.onfocus = (event) => AlertError.close();
+//inputHeight.onfocus = (event) => AlertError.close();
+
+inputWeight.oninput = () => AlertError.close();
+inputHeight.oninput = () => AlertError.close();
