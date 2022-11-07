@@ -1,5 +1,6 @@
 import { Modal } from './modal.js';
 import { AlertError } from './alert-error.js';
+import { notANumber, bmiCalculation } from './utils.js';
 
 const form = document.querySelector('form'); 
 const inputWeight = document.querySelector('#weight');
@@ -18,7 +19,7 @@ form.onsubmit = (event) => {
     AlertError.open();
     return;
   }
-    
+
   AlertError.close();
 
   const resultIMC = bmiCalculation(weight, height);
@@ -27,13 +28,3 @@ form.onsubmit = (event) => {
   Modal.message.innerText = message;
   Modal.open();
 }
-
-function notANumber(value){
-  return isNaN(value) || value == "";
-}
-
-function bmiCalculation(weight, height){
-  let resBMI = (weight/((height / 100) ** 2)).toFixed(2);
-  return resBMI;
-}
-
