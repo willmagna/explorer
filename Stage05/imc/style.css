@@ -14,8 +14,12 @@
   --ot-input: #02799d;
   --bd-input: rgba(73, 80, 87, 0.3);
   --tt-placeholder: rgba(73, 80, 87, 0.5);
+  --bg-input: #dce2e9;
+
   --tt-button: #fff;
   --bg-button: #02799d;
+  --bg-button-hover: #025b77;
+
   --bg-error: #f03e3e;
   --tt-error: #fff;
 
@@ -24,7 +28,11 @@
 body {
   font-family: 'Roboto', sans-serif;
   background: #040924;
+}
+
+body, input, button {
   font-size: 1.6rem;
+  line-height: 2rem;
 }
 
 .container {
@@ -41,5 +49,80 @@ body {
   
   box-shadow: 0rem .2rem .4rem rgba(0, 0, 0, 0.1);
   border-radius: .6rem;
+
+}
+
+.title {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: var(--tt-heading);
+}
+
+form {
+  width: 30rem;
+}
+
+form h1 {
+  margin-bottom: 3.2rem;
+}
+
+form label {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--tt-label);
+  margin-bottom: .8rem;
+  display: block; /*O display do label é inline não aceita margin-bottom, por este motivo, troca para display block*/
+}
+
+form input {
+  width: 100%;
+  border: 1px solid var(--bd-input);
+  background-color: var(--bg-input);
+  padding: 1.6rem;
+  border-radius: .4rem;
+}
+
+form input:focus {
+  /*quando o input recebe o foco (click) adiciona uma borda no campo*/
+  outline: 2px solid var(--ot-input);
+}
+
+form input::placeholder { /*A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s).*/
+  color: var(--tt-placeholder);
+}
+
+.input-wrapper + .input-wrapper {
+  /*aplica um margin top na classe sucessora*/
+  margin-top: 1.6rem;
+}
+
+button {
+  margin-top: 3.2rem;
+  padding: 1.6rem;
+  width: 100%;
+
+  border-radius: .4rem;
+  border: none;
+  background-color: var(--bg-button);
+  color: var(--tt-button);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  /*A transição é no button e não no hover. pq se for no hover
+    só será acionada quando o mouse passar em cima
+    e terminará assim que o mouse sair de cima
+  */
+  transition: background .3s;
+
+}
+
+button:hover {
+  background: var(--bg-button-hover);
 
 }
