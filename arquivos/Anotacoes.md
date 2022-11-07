@@ -365,3 +365,10 @@ A DOM é direcionada a eventos event-drive. Significa que ela poderá reagir a q
 
 2. Reações
   O sistema poderá executar reações às ações. Executar uma função sempre que determinada ação acontecer.
+
+# ES Modules
+* Sintaxe que entrou no JS no EcmaScript 6 (ES6)
+* Disponibizar qualquer tipo de dado entre arquivos
+* Separar código em diversos arquivos
+* Isolar escopo e código
+
