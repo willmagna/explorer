@@ -16,3 +16,14 @@ export const Modal = {
 Modal.buttonClose.onclick = () => {
   Modal.close();
 }
+
+window.addEventListener('keydown', (event) => {
+  //console.log(event.key); CAPTURA TODAS AS TECLAS PRESSIONADAS
+
+  if(event.key === 'Escape'){
+    //console.log('Apertei o ESC');
+    Modal.close();
+  }
+
+
+})
