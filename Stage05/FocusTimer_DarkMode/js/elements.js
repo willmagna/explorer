@@ -21,6 +21,8 @@ const volumeRain = buttonRain.querySelector('input');
 const volumeCoffeeShop = buttonCoffeeShop.querySelector('input');
 const volumeFirePlace = buttonFirePlace.querySelector('input');
 
+const body = document.body
+
 export {
   buttonPlay,
   buttonPause,
@@ -38,5 +40,6 @@ export {
   volumeForest,
   volumeRain,
   volumeCoffeeShop,
-  volumeFirePlace
+  volumeFirePlace,
+  body
 }

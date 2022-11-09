@@ -17,7 +17,8 @@ import {
   volumeForest,
   volumeRain,
   volumeCoffeeShop,
-  volumeFirePlace
+  volumeFirePlace,
+  body
 } from "./elements.js";
 
 let timerTimeOut;
@@ -185,11 +186,21 @@ function containsClass(buttonName){
 buttonLightMode.addEventListener('click', () => {
   buttonLightMode.classList.add('hide');
   buttonDarkMode.classList.remove('hide');
+
+  body.className = "light-mode";
+  lightMode();
+  
+
 })
 
 buttonDarkMode.addEventListener('click', () => {
   buttonLightMode.classList.remove('hide');
   buttonDarkMode.classList.add('hide');
+
+  body.className = "dark-mode";
+  darkMode();
+  
+
 })
 
 volumeForest.addEventListener('click', () => {
@@ -205,3 +216,23 @@ volumeCoffeeShop.addEventListener('click', () => {
 volumeFirePlace.addEventListener('click', () => {
   sound.volumeFirePlace(volumeFirePlace.value);
 })
+
+function darkMode(){
+  document.querySelector('.play svg :nth-child(1)').classList.add('dark-mode-fill')
+  document.querySelector('.pause svg :nth-child(1)').classList.add('dark-mode-fill')
+  document.querySelector('.pause svg :nth-child(2)').classList.add('dark-mode-fill')
+  document.querySelector('.pause svg :nth-child(3)').classList.add('dark-mode-fill')
+  document.querySelector('.stop svg :nth-child(1)').classList.add('dark-mode-fill')
+  document.querySelector('.increase svg :nth-child(1)').classList.add('dark-mode-fill')
+  document.querySelector('.decrease svg :nth-child(1)').classList.add('dark-mode-fill')
+}
+
+function lightMode(){
+  document.querySelector('.play svg :nth-child(1)').classList.remove('dark-mode-fill')
+  document.querySelector('.pause svg :nth-child(1)').classList.remove('dark-mode-fill')
+  document.querySelector('.pause svg :nth-child(2)').classList.remove('dark-mode-fill')
+  document.querySelector('.pause svg :nth-child(3)').classList.remove('dark-mode-fill')
+  document.querySelector('.stop svg :nth-child(1)').classList.remove('dark-mode-fill')
+  document.querySelector('.increase svg :nth-child(1)').classList.remove('dark-mode-fill')
+  document.querySelector('.decrease svg :nth-child(1)').classList.remove('dark-mode-fill')
+}

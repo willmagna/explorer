@@ -105,3 +105,18 @@ header {
   bottom: 2rem;
 }
 
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode-fill {
+  fill: white;
+}
+
+.light-mode {
+  background-color: #fff;
+  color: black;
+}
+
+
