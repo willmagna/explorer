@@ -1,3 +1,5 @@
+import Sound from "./sounds.js";
+
 import {
   buttonPlay,
   buttonPause,
@@ -14,6 +16,7 @@ import {
 
 let timerTimeOut;
 let minutes = Number(minutesDisplay.textContent);
+const sound = Sound();
 
 
 function countDown(){
@@ -111,25 +114,63 @@ buttonDecrease.addEventListener('click', () => {
 })
 
 
-/*
+
 buttonForest.addEventListener('click', () => {  
 
-  buttonForest.querySelector('svg :nth-child(1)').classList.add('bgButtonSoundsClicked');
-  buttonForest.querySelector('svg :nth-child(2)').classList.add('colorButtonSoundsClicked');
+  clickSoundsButton(buttonForest);
+  
+  if(containsClass(buttonForest)){
+    sound.playButtonForest();
+  }else{
+    sound.pauseButtonForest();
+  }
   
 })
 
 buttonRain.addEventListener('click', () => {
-  alert('Rain');
+  clickSoundsButton(buttonRain);
+
+  if(containsClass(buttonRain)){
+    sound.playButtonRain();
+  }else{
+    sound.pauseButtonRain();
+  }
 
 })
 
 buttonCoffeeShop.addEventListener('click', () => {
-  alert('CoffeeShop');
+  clickSoundsButton(buttonCoffeeShop);
+  
+  if(containsClass(buttonCoffeeShop)){
+    sound.playButtonCoffeeShop();
+  }else{
+    sound.pauseButtonCoffeeShop();
+  }
+
 })
 
 buttonFirePlace.addEventListener('click', () => {
-  alert('FirePlace');
+  clickSoundsButton(buttonFirePlace);
+
+  if(containsClass(buttonFirePlace)){
+    sound.playButtonFirePlace();
+  }else{
+    sound.pauseButtonFirePlace();
+  }
+
+
 })
 
-*/
+function clickSoundsButton(buttonName){
+  buttonName.querySelector('svg :nth-child(1)').classList.toggle('bgButtonSoundsClicked');
+  buttonName.querySelector('svg :nth-child(2)').classList.toggle('colorButtonSoundsClicked');
+}
+
+function unClickSoundsButton(buttonName){
+  buttonName.querySelector('svg :nth-child(1)').classList.remove('bgButtonSoundsClicked');
+  buttonName.querySelector('svg :nth-child(2)').classList.remove('colorButtonSoundsClicked');
+}
+
+function containsClass(buttonName){
+  return buttonName.querySelector('svg :nth-child(1)').classList.contains('bgButtonSoundsClicked');
+}
