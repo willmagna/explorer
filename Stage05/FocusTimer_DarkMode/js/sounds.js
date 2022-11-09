@@ -4,6 +4,11 @@ export default function() {
   const coffeeShop = new Audio("https://github.com/willmagna/explorer/blob/main/Stage05/FocusTimer2.0/audio/Cafeteria.wav?raw=true");
   const firePlace = new Audio("https://github.com/willmagna/explorer/blob/main/Stage05/FocusTimer2.0/audio/Lareira.wav?raw=true");
   
+  forest.loop = true;
+  rain.loop = true;
+  coffeeShop.loop = true;
+  firePlace.loop = true;
+
   function playButtonForest(){
     forest.play();
   }
