@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  --bg-color: #fff;
+
+  --primary-color: #323238;
+  --secondary-color: #fff;
+
+  --bg-button-primary-color: #E1E1E6;
+  --bg-button-secondaty-color: #02799D;
+
+
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+
+  font-family: 'Roboto', sans-serif;
+ 
+}
+
+main {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 11.2rem;
+
+  min-height: 100vh;
+  margin-top: -1.5rem;
+}
+
+.panelTimer{
+  max-width: 31.2rem;
+}
+
+.panelSounds {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3.2rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+#timer {
+  display: flex;
+  font-size: 12.6rem;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 4rem;
+
+}
+
+.bgButtonSoundsClicked {
+  fill: #02799D;
+}
+
+.colorButtonSoundsClicked {
+  fill: #fff;
+}
