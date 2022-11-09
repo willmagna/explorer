@@ -36,6 +36,26 @@ export default function() {
     firePlace.pause();
   }
 
+  function volumeForest(value){
+    value = value / 100;
+    forest.volume = value;
+  }
+
+  function volumeRain(value){
+    value = value / 100;
+    rain.volume = value;
+  }
+
+  function volumeCoffeeShop(value){
+    value = value / 100;
+    coffeeShop.volume = value;
+  }
+
+  function volumeFirePlace(value){
+    value = value / 100;
+    firePlace.volume = value;
+  }
+
   return {
     playButtonForest,
     pauseButtonForest,
@@ -44,7 +64,11 @@ export default function() {
     playButtonCoffeeShop,
     pauseButtonCoffeeShop,
     playButtonFirePlace,
-    pauseButtonFirePlace
+    pauseButtonFirePlace,
+    volumeForest,
+    volumeRain,
+    volumeCoffeeShop,
+    volumeFirePlace
   }
   
 }

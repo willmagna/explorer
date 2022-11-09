@@ -13,6 +13,14 @@ const buttonFirePlace = document.querySelector('.firePlace');
 const minutesDisplay = document.querySelector('.minutes');
 const secondsDisplay = document.querySelector('.seconds');
 
+const buttonLightMode = document.querySelector('.lightMode');
+const buttonDarkMode = document.querySelector('.darkMode');
+
+const volumeForest = buttonForest.querySelector('input');
+const volumeRain = buttonRain.querySelector('input');
+const volumeCoffeeShop = buttonCoffeeShop.querySelector('input');
+const volumeFirePlace = buttonFirePlace.querySelector('input');
+
 export {
   buttonPlay,
   buttonPause,
@@ -24,5 +32,11 @@ export {
   buttonCoffeeShop,
   buttonFirePlace,
   minutesDisplay,
-  secondsDisplay
+  secondsDisplay,
+  buttonLightMode,
+  buttonDarkMode,
+  volumeForest,
+  volumeRain,
+  volumeCoffeeShop,
+  volumeFirePlace
 }

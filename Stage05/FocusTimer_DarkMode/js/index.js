@@ -11,7 +11,13 @@ import {
   buttonCoffeeShop,
   buttonFirePlace,
   minutesDisplay,
-  secondsDisplay
+  secondsDisplay,
+  buttonLightMode,
+  buttonDarkMode,
+  volumeForest,
+  volumeRain,
+  volumeCoffeeShop,
+  volumeFirePlace
 } from "./elements.js";
 
 let timerTimeOut;
@@ -174,3 +180,28 @@ function unClickSoundsButton(buttonName){
 function containsClass(buttonName){
   return buttonName.querySelector('svg :nth-child(1)').classList.contains('bgButtonSoundsClicked');
 }
+
+
+buttonLightMode.addEventListener('click', () => {
+  buttonLightMode.classList.add('hide');
+  buttonDarkMode.classList.remove('hide');
+})
+
+buttonDarkMode.addEventListener('click', () => {
+  buttonLightMode.classList.remove('hide');
+  buttonDarkMode.classList.add('hide');
+})
+
+volumeForest.addEventListener('click', () => {
+  sound.volumeForest(volumeForest.value);
+})
+volumeRain.addEventListener('click', () => {
+  sound.volumeRain(volumeRain.value);
+})
+volumeCoffeeShop.addEventListener('click', () => {
+  sound.volumeCoffeeShop(volumeCoffeeShop.value);
+})
+
+volumeFirePlace.addEventListener('click', () => {
+  sound.volumeFirePlace(volumeFirePlace.value);
+})
