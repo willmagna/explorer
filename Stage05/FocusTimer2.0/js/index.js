@@ -30,7 +30,7 @@ function countDown(){
     }
 
     if(seconds <= 0){
-      seconds = 5;
+      seconds = 60;
       --localMinutes;
     }
 
@@ -86,19 +86,28 @@ buttonStop.addEventListener('click', () => {
 
 buttonIncrease.addEventListener('click', () => {
 
-  let minutes = Number(minutesDisplay.textContent);
-  minutesDisplay.textContent = String(minutes + 5).padStart(2, "0");
+  let resMinutes = Number(minutesDisplay.textContent) + 5;
+
+  minutesDisplay.textContent = String(resMinutes).padStart(2, "0");
 })
 
 buttonDecrease.addEventListener('click', () => {
 
-  let resMinutes = Number(minutesDisplay.textContent) - 5;
+  let resMinutes = Number(minutesDisplay.textContent);
+
+  if(resMinutes <= 5){
+    resMinutes = Number(minutesDisplay.textContent) - 1; 
+  }else{
+    resMinutes = Number(minutesDisplay.textContent) - 5; 
+  }
 
   if(resMinutes <= 0) {
     minutesDisplay.textContent = String(0).padStart(2, "0");
     return;
   }
+
   minutesDisplay.textContent = String(resMinutes).padStart(2, "0");
+
 })
 
 
