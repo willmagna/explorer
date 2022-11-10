@@ -9,5 +9,5 @@ router.add(404, '/pages/404.html');
 
 router.handle();
 
-window.onpopstate = () => router.handle();
-window.route = () => router.route();
+window.onpopstate = () => router.handle();//botões do back e forward no navegador;
+window.route = () => router.route();//coloca na window a função route() que ta no onclick lá no index.html
