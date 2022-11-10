@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  /*background-image: url("./images/background.jpg");*/
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
+  min-height: 100vh;
+}
+
+body, a {
+  font-size: 2rem;
+  color: white;
+}
+
+nav {
+  display: flex;
+  gap: 6rem;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5rem 0 0 5rem;
+  
+}
+
+nav img {
+  width: 5rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover{
+  font-weight: bold;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  min-height: 80vh;
+  text-align: center;
+  padding: 0 20rem;
+}
+
+main #app {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+main #app p {
+  font-size: 1.5rem;
+}
