@@ -372,3 +372,6 @@ A DOM é direcionada a eventos event-drive. Significa que ela poderá reagir a q
 * Separar código em diversos arquivos
 * Isolar escopo e código
 
+# JavaScript Eventes
+## Onclick
+  * onclick é a mesma coisa que: document.querySelector('nav a:nth-child(1)').addEventListener('click', () => {});
