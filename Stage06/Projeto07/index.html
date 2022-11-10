@@ -18,19 +18,17 @@
   <script>
 
     const routes = {
-      "/": "/pages/home.html",
-      "/about": "/pages/about.html",
-      "/contact": "/pages/contact.html",
-      404: "/pages/home.html",
+      "/": "/Stage06/Projeto07/pages/home.html",
+      "/about": "/Stage06/Projeto07/pages/about.html",
+      "/contact": "/Stage06/Projeto07/pages/contact.html",
+      404: "/Stage06/Projeto07/pages/home.html",
     }
 
-    //Pra acessar o objeto com "": console.log(routes["/about"]). Usa-se colchetes.
 
     function route(event){
       event = event || window.event;
       event.preventDefault();
-      //depois da linha acima, foi mudado a mudança automática da página
-      //ai a linha abaixo diz, "coloque no historico que eu esotu mudando de página"
+
       window.history.pushState({}, "", event.target.href);
 
       handle();
@@ -38,10 +36,21 @@
 
     function handle() {
 
-      const { pathname } = window.location; //desestruturação. É a mesma coisa que const pathname = window.location.pathname. Só que diferente. Da pra fazer assim: const { pathname, href, host, port} = window.location;
+      const { pathname } = window.location; 
+      const route = routes[pathname] || routes[404];
 
-      console.log(pathname);
+      console.log(route);
+
+      fetch(route)
+      .then(data => data.text())
+      .then(html => {
+        document.querySelector('#app').innerHTML = html
+      })
     }
+
+    handle();
+
+    window.onpopstate = () => handle(); //botões do back e forward no navegador;
 
   </script>
 

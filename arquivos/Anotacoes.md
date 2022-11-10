@@ -375,3 +375,11 @@ A DOM é direcionada a eventos event-drive. Significa que ela poderá reagir a q
 # JavaScript Eventes
 ## Onclick
   * onclick é a mesma coisa que: document.querySelector('nav a:nth-child(1)').addEventListener('click', () => {});
+
+
+
+# Promisses
+  * Conceito (assincronismo):
+      console.log('inicio');
+      setTimeout(() => console.log('executei'), 1000);
+      console.log('fim');
