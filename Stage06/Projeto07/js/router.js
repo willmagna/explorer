@@ -25,7 +25,7 @@ export class Router {
     .then(html => {
       document.querySelector('#app').innerHTML = html
     })
-
+0
   }
 
 }

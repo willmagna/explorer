@@ -383,3 +383,13 @@ A DOM é direcionada a eventos event-drive. Significa que ela poderá reagir a q
       console.log('inicio');
       setTimeout(() => console.log('executei'), 1000);
       console.log('fim');
+
+
+* O NodeList é um array like. Ou seja, parece com um array.
+  Se é um array like, vc tbm consegue algumas funcionalidades dos arrays
+
+* Array:
+  [].funções
+
+* this
+  - O this é pra acesar a variável "global" da classe, ou seja, é pra acessar o próprio atributo da classe.
