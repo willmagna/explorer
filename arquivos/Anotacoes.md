@@ -397,9 +397,19 @@ A DOM é direcionada a eventos event-drive. Significa que ela poderá reagir a q
 
 # Git
 
-* Entrar na pasta através do terminal e digitar
+## Entrar na pasta através do terminal e digitar
   - git init
-* Definir nome e email
+
+## Definir nome e email
   - git config --global user.name "William"
   - git config --global user.email "williamlodea@gmail.com"
   - git config --list
+
+## Ver todo o histórico de commits
+  - git log 
+  - git log --oneline
+  - git log -n 3 (retorna os últimos 3 commits realizados)
+
+## Estágios do arquivo
+  1. Iniciamos o repositório
+  
