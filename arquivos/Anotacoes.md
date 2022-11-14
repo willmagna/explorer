@@ -393,3 +393,13 @@ A DOM é direcionada a eventos event-drive. Significa que ela poderá reagir a q
 
 * this
   - O this é pra acesar a variável "global" da classe, ou seja, é pra acessar o próprio atributo da classe.
+
+
+# Git
+
+* Entrar na pasta através do terminal e digitar
+  - git init
+* Definir nome e email
+  - git config --global user.name "William"
+  - git config --global user.email "williamlodea@gmail.com"
+  - git config --list
