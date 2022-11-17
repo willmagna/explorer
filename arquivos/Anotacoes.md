@@ -412,4 +412,35 @@ A DOM é direcionada a eventos event-drive. Significa que ela poderá reagir a q
 
 ## Estágios do arquivo
   1. Iniciamos o repositório
+  2. Working Diretory
+    (add)
+  3. Stage Area
+    (commit)
+  4. Repository
   
+## HEAD
+A função do HEAD é apontar, mostrar qual foi o último commit que vc realizou
+  - git log
+
+## GIT DIFF
+  - git diff
+
+## Desfazendo modificações
+  - git status
+  ### Restaura arquivo específico
+    - git restore index.html 
+  ### Restaura tudo
+    - git restore .
+  - git status (pra conferir se tudo voltou como era antes da alteração)
+
+## Restaurando da Staged
+  Quando vc altera os arquivos e coloca na stage, ou seja, (git add .) e quer voltar como era antes.
+  Ai ele volta pra working area.
+  - git restore --staged index.html
+  - git restore --staged .
+
+## Corrigindo a mensagem último commit
+  - git commit --amend -m "nova mensagem"
+
+## Desfazendo o último commit
+  - git reset --soft HEAD~1
