@@ -444,3 +444,27 @@ A função do HEAD é apontar, mostrar qual foi o último commit que vc realizou
 
 ## Desfazendo o último commit
   - git reset --soft HEAD~1
+
+## Git Ignore
+  - Criar um arquivo com o nome: ".gitignore"
+  - Ai os nomes dos arquivos que estiverem dentro dessa lista serão ignorados pelo git 
+  - Boas práticas, sempre colocar a pasta "node_modules" dentro do .gitignore pq essa pasta não precisa commitar
+  - Caso a pasta foi e depois vc ignorou ela ai vc precisa limpar a cache:
+    - git rm -r --cached .
+    - git add .
+    - git commit -m "gitignore update"
+    - git push
+
+## Git Keep
+  Pasta vazia o git entende como algo que não precisa ser rastreado
+  - Adiciona o arquivo na pasta que vc quer que seja commitada mesmo vazia: .gitkeep
+  - Não precisa escrever nada no arquivo .gitkeep
+
+## Git clone
+  Baixar o código atualizado pra trabalhar no computador de casa por exemplo
+  - Copia o link ssh da pasta que esta no github
+  - git clone git@github.com:willmagna/explorer.git
+
+## Git pull
+  Busca por atualizações no github e traz para o teu repositório local 
+  - git remote --v
