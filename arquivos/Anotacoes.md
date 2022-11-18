@@ -499,3 +499,7 @@ Incluindo, a criação de API.
   - Scripts e automações
   - IA
   - Machine Learning
+
+# Iniciando um projeto Nodejs e Adicionando o Express
+  - npm init -y 
+  - npm install express --save
