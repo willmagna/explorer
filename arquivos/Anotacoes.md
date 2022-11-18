@@ -473,4 +473,29 @@ A função do HEAD é apontar, mostrar qual foi o último commit que vc realizou
 ## README
   - Colocar na própria pasta do projeto
   - README.md tem que ser em caixa alta
-  r
+  
+
+# API
+Application Programming Interface, ou interface de Programação de Aplicação é um termo para designar uma interface de comunicação que um sistema oferece para que outros acessem suas funções.
+
+# Node.js
+Não é uma linguagem de programação.
+JS Runtime Enviroment (permite rodar JavaScript fora do navegador)
+Ele é um ambiente que oferece recursos que permite escrever e executar aplicações Javascript.
+
+## Para quê serve o Node.js?
+
+Serve para fazer o que você quiser, desde sites à scripts de automação.
+Incluindo, a criação de API.
+
+## Onde o Node.js pode ser utilizado?
+  - Backend
+  - FrontEnd
+  - Micro serviços
+  - API
+    - Web
+    - Desktop
+    - Mobile
+  - Scripts e automações
+  - IA
+  - Machine Learning
