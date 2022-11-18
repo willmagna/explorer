@@ -468,3 +468,9 @@ A função do HEAD é apontar, mostrar qual foi o último commit que vc realizou
 ## Git pull
   Busca por atualizações no github e traz para o teu repositório local 
   - git remote --v
+
+
+## README
+  - Colocar na própria pasta do projeto
+  - README.md tem que ser em caixa alta
+  r
