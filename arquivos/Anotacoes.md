@@ -506,6 +506,7 @@ Incluindo, a criação de API.
   - npm install nodemon --save-dev
   - npm run dev
   - npm install express-async-errors --save
+  - npm install bcryptjs
 
 # Estrutura inicial de um projeto
   - src
