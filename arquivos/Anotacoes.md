@@ -547,3 +547,6 @@ A próxima função middleware é comumente denotada por uma variável chamada n
   - Encerrar o ciclo de solicitação-resposta;
   - Chamar o próximo middleware na pilha.
 
+# SQL
+  - Instalar o sqlite
+    * npm install sqlite3 sqlite --save (o --save serve pra dizer que é de produção)
