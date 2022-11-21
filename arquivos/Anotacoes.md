@@ -505,3 +505,42 @@ Incluindo, a criação de API.
   - npm install express --save
   - npm install nodemon --save-dev
   - npm run dev
+
+# Estrutura inicial de um projeto
+  - src
+    - server.js
+      * Ponto de entrada da aplicação
+
+    - routes
+      * Quando uma requisiçaõ chega no server, vai passar pelas rotas, para que seja identificado qual o controller que será executado, o que o usuário está pedindo.
+      * Baseado na rota, no caminho, no endereço. A requisição será entregue para um determinado controller que é o controller que executará essa requisição e depois ele devolve para a rota e a rota sabe para quem ele tem que devolver através do server.js
+
+    - controllers
+      * É a camada, a parte responsável por processar  as requisições da aplicação.
+      * É a parte inteligência da aplicação, onde há as regras de negócio da aplicação.
+      * O controller é criado como uma classe
+      * Porque cria-se classe e não apenas uma função? Pq a classe permite criar várias funções (métodos).
+
+      * No Máximo 5 métodos. Boas práticas o controller terá no máximo 5 métodos:
+        - index - GET para listar vários registros.
+        - show - GET para exibir um registro específico.
+        - create - POST para criar um registro.
+        - update - PUT para atualizar um registro.
+        - delete - DELETE para remover um registro
+
+      * Você pode ou não colcoar um status code, do http code
+
+    - utils
+    - database, sqlite, migrations
+
+# Middleware
+São funções que tem acesso ao objeto de solicitação (requisição), o objeto de resposta (resposta), e a próxima função de middleware no ciclo solicitação-resposta do aplicativo.
+
+A próxima função middleware é comumente denotada por uma variável chamada next.
+
+## Middleware podem
+  - Executar qualquer código;
+  - Fazer mudanças nos objetos de solicitação e resposta;
+  - Encerrar o ciclo de solicitação-resposta;
+  - Chamar o próximo middleware na pilha.
+
