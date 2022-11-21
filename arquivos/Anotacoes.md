@@ -561,3 +561,8 @@ A próxima função middleware é comumente denotada por uma variável chamada n
     - R -> Read -> SELECT
     - U -> Update -> UPDATE
     - D -> Delete -> DELETE
+
+
+# Nullish coalescing operator (??)
+The nullish coalescing (??) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing
