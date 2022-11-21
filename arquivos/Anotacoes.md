@@ -548,5 +548,15 @@ A próxima função middleware é comumente denotada por uma variável chamada n
   - Chamar o próximo middleware na pilha.
 
 # SQL
-  - Instalar o sqlite
-    * npm install sqlite3 sqlite --save (o --save serve pra dizer que é de produção)
+  * Instalar o sqlite
+    - npm install sqlite3 sqlite --save (o --save serve pra dizer que é de produção)
+  * Comandos DDL (Data Definition Language)
+    - CREATE
+    - DROP
+    - ALTER
+    
+  * Comandos DML (Data Manipulation Language)
+    - C -> Create -> INSERT
+    - R -> Read -> SELECT
+    - U -> Update -> UPDATE
+    - D -> Delete -> DELETE
