@@ -584,3 +584,20 @@ https://knexjs.org/#Installation-node
 # Migrations
 É uma forma de versionar a base de dados.
 Migrations trabalha na manipulação da base de dados: criando, alterando ou removendo.
+
+## Métodos de uma Migrations
+  * UP: método responsável por criar ou alterar algo no bando de dados.
+  * DOWN: responsável pelo rollback. Ou seja, desfazer as alterações realizadas pela migration.
+
+# NPM 
+Node Package Manager é o gerenciador de pacotes padrão para Node.js.
+Os pacotes e módulos necessários no projeto Node são instalados usando npm.
+E também utilizamos o npm para executar scripts e bibliotecas instaladas.
+
+# NPX
+Node Package Execute, vem com o npm acima da versão 5.2.
+É um executor de pacotes npm que pode executar qualquer pacote que você quiser do registro npm sem sequer instalar esse pacote.
+
+## Em resumo
+  * NPM é uma ferramenta que usa para instalar pacotes.
+  * NPX é uma ferramenta que usa para executar pacotes.
