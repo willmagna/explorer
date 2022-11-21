@@ -566,3 +566,21 @@ A próxima função middleware é comumente denotada por uma variável chamada n
 # Nullish coalescing operator (??)
 The nullish coalescing (??) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing
+
+# SQL Query Builder
+Query Builder é um Construtor de Consulta.
+
+O Query Builder permite que você construa instruções SQL independente do bando de dados utiliado.
+
+O query builder gera o SQL específico para o banco de dados que está sendo utilizado.
+
+# Instalando Knex.js
+https://knexjs.org/#Installation-node
+* Instalar:
+  - npm install knex --save
+* Configurar:
+  - npx knex init
+
+# Migrations
+É uma forma de versionar a base de dados.
+Migrations trabalha na manipulação da base de dados: criando, alterando ou removendo.
