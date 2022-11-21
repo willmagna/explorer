@@ -503,3 +503,5 @@ Incluindo, a criação de API.
 # Iniciando um projeto Nodejs e Adicionando o Express
   - npm init -y 
   - npm install express --save
+  - npm install nodemon --save-dev
+  - npm run dev
