@@ -505,6 +505,7 @@ Incluindo, a criação de API.
   - npm install express --save
   - npm install nodemon --save-dev
   - npm run dev
+  - npm install express-async-errors --save
 
 # Estrutura inicial de um projeto
   - src
@@ -531,6 +532,8 @@ Incluindo, a criação de API.
       * Você pode ou não colcoar um status code, do http code
 
     - utils
+      * Deixar padrão o tratamento de exceção
+
     - database, sqlite, migrations
 
 # Middleware
