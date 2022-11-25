@@ -664,3 +664,7 @@ O react é uma biblioteca e não de um framework
       npm install --save styled-components
 
 
+      vscode-styled-components
+
+
+# Arrow Function
