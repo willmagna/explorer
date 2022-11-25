@@ -622,9 +622,45 @@ O react é uma biblioteca e não de um framework
   - https://vitejs.dev/guide/why.html
 
 ## Criando o projeto no Stage09
-* Na pasta do projeto vc executa:
 
-  - npm create vite@latest
-  - cd rocketnotes
-  - npm install
-  - npm run dev
+  * Na pasta do projeto vc executa:
+    - npm create vite@latest
+    - cd rocketnotes
+    - npm install
+    - npm run dev
+
+
+## Anotações sobre o React
+
+  * O react é SPA (Single Page Application)
+  * .jsx é a sintaxe que utilizamos pra criar interfaces com react
+  * Consegue-se escrever html dentro de javascript graças ao jsx 
+  * O nome da interface deve ser o mesmo do arquivo pra facilitar vc se encontrar no projeto.
+  * O nome do componente tem que começar com letra maiúscula
+  * É comum no react chamar a interface de componentes porque a interface tbm é um componente visto que o react trabalha com componentização que é criar partes para reaproveitar na construção das interfaces, como se fosse um quebra-cabeça 
+  * Quando vc usa um export em uma função sem o default vc tem que usar exatamente o nome da função que está no arquivo na hora de importar esse componente em um outro arquivo com as {}. Se usar o default vc pode usar qq nome. É mais pra usar uma padronização no código.
+  * REGRA no react: um componente retorna no máximo um elemento. Ai vc usa o Fragment que serve pra "embrulhar" e retorna um único elemento no return da function
+  * No react, cada página tem seu próprio css
+  * Como organização de diretório e como cada página tem seu próprio css. Cria-se uma pasta com o nome da página, cria o arquivo css e o arquivo que é a página em sí, renomeia-se para index.jsx. Pq assim no diretório com o nome da página, o servidor vai direto pegar o arquivo index pra leitura. Assim não fica redundante da hora de importar.
+
+# CSS, Pré-processadores, CSS-in-JS
+  ## Pré-processadores
+    - Um CSS pré processador quer dizer que você não vai utilizar esse arquivo em produção. Na verdade, ele será processado para utilização final no CSS da sua aplicação.
+    - CSS Minificado
+  ## CSS-in-JS
+    - CSS-in-JS fazem muito sentido, porque aproveitam métodos atuais de componentização em JavaScript para criar componentes performáticos a prova de colisão.
+    - E tudo isso é extremamente automatizado.
+  ## Styled Componentes
+    - Style Componentes foi desenvolvido para melhorar a maneira que lidamos com CSS nos componentes de aplicações React.
+    - Quais as vantagens? 
+      É escrever CSS dentro de JavaScript, ao escrever css dentro do JS aproveitamos todos os recursos que o JS oferece de trabalhar com componentização.
+      O styled componentes tbm utiliza a estratégia de um pre processador porque no final das contas ele vai gerar um arquivo css e a minificação do código css.
+
+    - Installation
+    
+      https://styled-components.com/
+
+      with npm
+      npm install --save styled-components
+
+
