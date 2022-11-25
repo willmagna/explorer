@@ -613,3 +613,18 @@ O método map() invoca a função callback passada por argumento para cada eleme
 
 # Array.prototype.filter()
 O método filter() cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
+
+
+# React 
+O react é uma biblioteca e não de um framework
+  - https://pt-br.reactjs.org/
+  - https://create-react-app.dev/
+  - https://vitejs.dev/guide/why.html
+
+## Criando o projeto no Stage09
+* Na pasta do projeto vc executa:
+
+  - npm create vite@latest
+  - cd rocketnotes
+  - npm install
+  - npm run dev
