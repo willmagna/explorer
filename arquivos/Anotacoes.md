@@ -642,6 +642,7 @@ O react é uma biblioteca e não de um framework
   * REGRA no react: um componente retorna no máximo um elemento. Ai vc usa o Fragment que serve pra "embrulhar" e retorna um único elemento no return da function
   * No react, cada página tem seu próprio css
   * Como organização de diretório e como cada página tem seu próprio css. Cria-se uma pasta com o nome da página, cria o arquivo css e o arquivo que é a página em sí, renomeia-se para index.jsx. Pq assim no diretório com o nome da página, o servidor vai direto pegar o arquivo index pra leitura. Assim não fica redundante da hora de importar.
+  * Quando um elemento se repete é um forte candidato a ser um componente. 
 
 # CSS, Pré-processadores, CSS-in-JS
   ## Pré-processadores
@@ -668,3 +669,7 @@ O react é uma biblioteca e não de um framework
 
 
 # Arrow Function
+
+# React Icons
+
+https://react-icons.github.io/react-icons/
