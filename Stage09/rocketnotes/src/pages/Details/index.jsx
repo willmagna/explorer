@@ -1,4 +1,4 @@
-import { Container, Links } from './styles';
+import { Container, Links, Content } from './styles';
 
 import { Header } from '../../components/Header';
 import { Button } from '../../components/Button';
@@ -13,26 +13,40 @@ export function Details() {
 
       <Header/>
 
-      <ButtonText title="Excluir nota" />
+      <main>
+        <Content>
+          
+          <ButtonText title="Excluir nota" />
 
-      <Section title="Links úteis">
-        <Links>
-          <li>
-            <a href="#">Item 1</a>
-          </li>
-          <li>
-            <a href="#">Item 2</a>
-          </li>
-        </Links>
-      </Section>
+            <h1>
+              Introdução ao React
+            </h1>
 
-      <Section title="Marcadores">
-        <Tag title="express"/>
-        <Tag title="note"/>
-      </Section>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse necessitatibus numquam reprehenderit, consequatur modi unde architecto, culpa amet hic odit laborum harum natus eum, sequi voluptatum nesciunt nulla explicabo! Deserunt!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quos voluptates odio aspernatur magnam odit, eaque, molestiae eos distinctio aperiam qui vitae aliquam rem. Dolor impedit ullam aut repellat? Repellendus?
+            </p>
 
+            <Section title="Links úteis">
+              <Links>
+               <li>
+                 <a href="#">Item 1</a>
+               </li>
+               <li>
+                 <a href="#">Item 2</a>
+               </li>
+              </Links>
+            </Section>
 
-      <Button title="Voltar" />
+            <Section title="Marcadores">
+             <Tag title="express"/>
+             <Tag title="note"/>
+           </Section>
+
+          <Button title="Voltar" />
+
+        </Content>
+      </main>
       
 
     </Container>
