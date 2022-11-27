@@ -673,3 +673,6 @@ O react é uma biblioteca e não de um framework
 # React Icons
 
 https://react-icons.github.io/react-icons/
+
+# Map
+O Map é uma estrutura de repetição
