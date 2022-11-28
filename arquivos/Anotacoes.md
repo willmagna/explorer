@@ -676,3 +676,9 @@ https://react-icons.github.io/react-icons/
 
 # Map
 O Map é uma estrutura de repetição
+
+# React Router
+https://v5.reactrouter.com/web/guides/quick-start
+
+install:
+  - npm install react-router-dom
