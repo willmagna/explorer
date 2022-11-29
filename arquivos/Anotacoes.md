@@ -682,3 +682,15 @@ https://v5.reactrouter.com/web/guides/quick-start
 
 install:
   - npm install react-router-dom
+
+
+# Se prepare para a entrevista
+1. Estude os itens requeridos na vaga.
+2. Para um Call escolha um ambiente silencioso.
+3. Deixe o ambiente da entrevista organizado.
+4. Conheça a empresa (site, linkedin).
+5. Conheça o produto principal da empresa.
+6. Identifique alguém que trabalha na empresa para conectar-se (linkedin).
+7. Seja honesto com o recrutador.
+8. Demonstre interesse.
+9. Esteja aberto a aprender
