@@ -684,6 +684,8 @@ install:
   - npm install react-router-dom
 
 
+###### Nível 10 #######
+
 # Se prepare para a entrevista
 1. Estude os itens requeridos na vaga.
 2. Para um Call escolha um ambiente silencioso.
@@ -694,3 +696,45 @@ install:
 7. Seja honesto com o recrutador.
 8. Demonstre interesse.
 9. Esteja aberto a aprender
+
+# Sua apresentação
+1. Apresentação Curta
+  * Você tem tempo limitado!
+2. Apresentação Direta
+  * Vá direto ao ponto.
+3. Escreva
+  * E leia a sua apresentação para você mesmo.
+
+# Ética na entrevista
+1. Porque você está saindo da sua empresa atual?
+2. Quais são algumas das melhores e piores coisas sobre sua empresa atual?
+3. Busque respostas sem expor ou desmerecer o aprendizado que sua empresa atual proporcinou a você.
+
+# Estrutura de processo seletivo
+1. Aplicação para a vaga
+2. Avaliação do perfil
+3. Entrevista com os candidatos selecionados
+4. Teste Técnicos
+5. Entrevista com o Gestor
+6. Onboarding
+
+# Testes Técnicos
+* Os testes técnicos avaliam como você lida com os problemas em um desafio
+1. Comunicação: sua comunicação também pode estar sendo testada. Não tenha medo de perguntar em caso de dúvida com algum requisito.
+2. Resolução de problemas: compreender o problema e abordá-lo de forma sistêmica e lógica.
+3. Competência técnica: implementar a solução, testar o conhecimento prático.
+4. Teste: capacidade de testar o código e corrigir.
+
+## Tipos de testes técnicos
+1. Codificar um projeto ou funcionalidade
+2. Resolver um Bug
+3. Refatorar um código
+4. Propor melhorias
+5. Questionário
+
+## Dicas de testes técnicos
+1. Certifique-se de quais ferramentas e tecnologias poderá utilizar.
+2. Leia e entenda primeiro o desafio. E leia quantas vezes for necessário.
+3. Enquanto codifica, vai relendo o desafio para certificar-se que está no caminho certo e que não perdeu o foco.
+4. Pense em fazer da forma mais simples primero. E depois se sobrar tempo, melhore.
+
