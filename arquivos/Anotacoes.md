@@ -738,3 +738,11 @@ install:
 3. Enquanto codifica, vai relendo o desafio para certificar-se que está no caminho certo e que não perdeu o foco.
 4. Pense em fazer da forma mais simples primero. E depois se sobrar tempo, melhore.
 
+# JWT (JSON Web Token)
+  É um padrão de mercado que define um token no formato JSON para a troca de informações.
+  Importante
+  JWT não representa o mecanismo de autenticação. Mas é um meio para a troca de informações no fluxo de autenticação.
+
+  Instalar biblioteca
+    - npm install jsonwebtoken
+    
