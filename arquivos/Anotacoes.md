@@ -746,3 +746,10 @@ install:
   Instalar biblioteca
     - npm install jsonwebtoken
     
+
+# Upload de imagens
+  - npm install multer
+
+## Manipulando Arquivos
+Módulo fs do Node.js
+O módulo fs permite trabalhar e manupular arquivos
