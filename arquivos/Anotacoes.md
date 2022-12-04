@@ -775,3 +775,14 @@ diretrizes prar que os sistemas distribuídos se comuniquem usando os princípio
 # Biblioteca Axios
   Pra trabalhar com requisições HTTP
   - npm install axios
+
+# Prop Drilling
+# Contexto
+
+# Hooks
+Permite que você use estados e outros recursos do React sem escrever uma classe.
+Encapsula funcionalidades e facilita o reaproveitamento da sua lógica
+Exemplo: useState e useEffect
+
+Padrão de nomenclatura para os hooks, colocar o "use" na frente do nome: useNomeDoHook (camelCase) 
+
