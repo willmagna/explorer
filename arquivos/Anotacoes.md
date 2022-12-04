@@ -786,3 +786,4 @@ Exemplo: useState e useEffect
 
 Padrão de nomenclatura para os hooks, colocar o "use" na frente do nome: useNomeDoHook (camelCase) 
 
+# Estados
