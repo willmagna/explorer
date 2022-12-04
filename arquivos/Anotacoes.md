@@ -793,3 +793,8 @@ Permite armazenar informações no navegador do usuário.
 ## Estrutura do Local Storage
 Local Storage: Chave ; Valor
 Exemplo: localStorage.setItem("user", "Rodrigo Gonçalves");
+
+# useEffect
+Você diz ao React que o componente precisa fazer algo depois da renderização. Isto é, depois que realizar as atualizações do DOM.
+## Porque o useEffect é chamado dentro de um componente?
+Colocando useEffect dentro do componente nos permite acessar os estados do componente.
