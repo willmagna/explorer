@@ -787,3 +787,9 @@ Exemplo: useState e useEffect
 Padrão de nomenclatura para os hooks, colocar o "use" na frente do nome: useNomeDoHook (camelCase) 
 
 # Estados
+
+# Local Storage
+Permite armazenar informações no navegador do usuário.
+## Estrutura do Local Storage
+Local Storage: Chave ; Valor
+Exemplo: localStorage.setItem("user", "Rodrigo Gonçalves");
