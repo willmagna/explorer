@@ -798,3 +798,7 @@ Exemplo: localStorage.setItem("user", "Rodrigo Gonçalves");
 Você diz ao React que o componente precisa fazer algo depois da renderização. Isto é, depois que realizar as atualizações do DOM.
 ## Porque o useEffect é chamado dentro de um componente?
 Colocando useEffect dentro do componente nos permite acessar os estados do componente.
+
+
+# Renderizações
+Render: Antes dos seus componentes serem exibidos na tela eles devem ser renderizados pelo React.
