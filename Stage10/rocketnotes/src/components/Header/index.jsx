@@ -3,10 +3,14 @@ import { useAuth } from '../../hooks/auth';
 
 import { Container, Profile, Logout } from "./styles";
 
+import { api } from '../../../../api/src/services/api';
+
 
 export function Header(){
 
-  const { signOut } = useAuth();
+  const { signOut, user } = useAuth();
+
+  const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder;
 
   return(
     <Container>
@@ -14,13 +18,13 @@ export function Header(){
         <Profile to="/Profile">
 
           <img 
-            src="https://avatars.githubusercontent.com/u/18670313?v=4"
-            alt="Texto alternativo" 
+            src={avatarUrl}
+            alt={user.name} 
             />
 
             <div>
               <span>Bem-vindo</span>
-              <strong>William Magnabosco</strong>
+              <strong>{user.name}</strong>
             </div>
 
         </Profile>
