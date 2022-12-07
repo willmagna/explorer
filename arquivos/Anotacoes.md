@@ -807,3 +807,18 @@ Render: Antes dos seus componentes serem exibidos na tela eles devem ser renderi
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
 
 The Object.assign() method copies all enumerable own properties from one or more source objects to a target object. It returns the modified target object.
+
+# Deploy
+O deploy ou deployment significa implantar.
+Significa enviar um novo projeto, mudanças ou atualizações para um determinado ambiente.
+
+  * Ambientes
+    - Desenvolvimento
+    - Staging ou teste
+    - Produção
+  
+  * Estratégias
+    - Deploy Manual
+    - Deploy Automatizado
+  
+  
