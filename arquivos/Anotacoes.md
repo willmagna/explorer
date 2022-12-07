@@ -802,3 +802,8 @@ Colocando useEffect dentro do componente nos permite acessar os estados do compo
 
 # Renderizações
 Render: Antes dos seus componentes serem exibidos na tela eles devem ser renderizados pelo React.
+
+# Object.assign()
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
+
+The Object.assign() method copies all enumerable own properties from one or more source objects to a target object. It returns the modified target object.
