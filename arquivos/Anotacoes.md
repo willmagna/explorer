@@ -821,4 +821,41 @@ Significa enviar um novo projeto, mudanças ou atualizações para um determinad
     - Deploy Manual
     - Deploy Automatizado
   
-  
+# Dados sensíveis
+  * Senhas
+  * Chave de serviços ou API
+  * Tokens, Hash
+  * Informações do banco de dados
+  * Etc
+
+## Variáveis de ambiente
+  * .env
+    - As chaves são em caixa alta, por padrão e não por exigência.
+    - As chaves não podem ter espaço
+    - Os valores podem ser quaisquer tipo, que será retornado sempre uma string
+    - Pode haver espaçamentos, porém é feito um trim na string
+    - Pode existir chave sem valor, que retorna uma string vazia
+
+## Boas práticas e cuidados
+Por se tratar de informações sensíveis na sua maioria é importante que esses dados só fiquem em seu ambiente de desenvolviemnto, então se você pretende compartilhar seu código lembre-se de remover esse arquivo.
+Caso utilize o github basta adicionar ao .gitignore o arquivo .env para ele fazer esse trabalho para você.
+
+Uma boa prática também é criar um arquivo de exemplo com as chaves que seu projeto está utilizando, sem os valores sensíveis, assim quem clocar seu repositório ou ter acesso ao seu fonte não ficará perdido.
+
+Eu crio um .env.example e deixo apenas informações genéricas como é o caso do APP_NAME
+
+## dotenv
+https://www.npmjs.com/package/dotenv
+
+npm install dotenv --save
+
+
+# Mantendo a API ON
+  * PM2
+    PM2 é um gerenciador de processos que irá ajudar a gerenciar e manter a aplicação online 24 horas por dia, 7 dias por semana.
+
+    https://pm2.keymetrics.io/docs/integrations/heroku/
+
+    - npx pm2 init
+    - npm install pm2
+    
