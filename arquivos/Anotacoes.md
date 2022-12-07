@@ -859,3 +859,6 @@ npm install dotenv --save
     - npx pm2 init
     - npm install pm2
     
+# A solução de deploy
+- https://render.com/
+- https://railway.app/
