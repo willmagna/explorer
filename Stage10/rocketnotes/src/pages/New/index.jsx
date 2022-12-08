@@ -7,7 +7,7 @@ import { Button } from '../../components/Button';
 import { ButtonText } from '../../components/ButtonText';
 import { Container, Form } from "./styles";
 import { useState } from 'react';
-import { api } from '../../../../api/src/services/api';
+import { api } from '../../services/api';
 import { useNavigate } from 'react-router-dom';
 
 

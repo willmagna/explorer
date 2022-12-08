@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Container, Links, Content } from './styles';
 import { useParams, useNavigate } from 'react-router-dom';
 
-import { api } from '../../../../api/src/services/api';
+import { api } from '../../services/api';
 
 import { Header } from '../../components/Header';
 import { Button } from '../../components/Button';

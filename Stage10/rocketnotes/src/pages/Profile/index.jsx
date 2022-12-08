@@ -6,7 +6,7 @@ import { Button } from '../../components/Button';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../hooks/auth';
 import avatarPlaceholder from '../../assets/avatar_placeholder.svg';
-import { api } from '../../../../api/src/services/api';
+import { api } from '../../services/api';
 
 
 export function Profile(){

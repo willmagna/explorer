@@ -1,11 +1,13 @@
 import { useNavigate } from 'react-router-dom';
 import { RiShutDownLine } from 'react-icons/ri';
 
+import avatarPlaceholder from '../../assets/avatar_placeholder.svg';
+
 import { useAuth } from '../../hooks/auth';
 
 import { Container, Profile, Logout } from "./styles";
 
-import { api } from '../../../../api/src/services/api';
+import { api } from '../../services/api';
 
 
 export function Header(){
@@ -23,7 +25,7 @@ export function Header(){
 
   return(
     <Container>
-
+ 
         <Profile to="/Profile">
 
           <img 
