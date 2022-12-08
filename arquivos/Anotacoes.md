@@ -862,3 +862,6 @@ npm install dotenv --save
 # A solução de deploy
 - https://render.com/
 - https://railway.app/
+
+# Netlify
+- https://www.netlify.com/
