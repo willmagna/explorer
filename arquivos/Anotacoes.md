@@ -865,3 +865,33 @@ npm install dotenv --save
 
 # Netlify
 - https://www.netlify.com/
+
+
+# Testes
+Permite identificar erros durante o desenvolvimento e assegurar a qualidade e o funcionamento correto da aplicação.
+## Testes Automatizados
+O teste automatizado é a utilização de ferramentas de software para automatizar um processo manual conduzido por humanos de revisão e validação da aplicação. Adoção ampla do método.
+
+## Tipos de testes
+  * Testes de unidades
+    - Testa unidades individuais do código.
+    - Por exemplo, testa uma função específica da aplicação.
+  
+  * Teste de Integração
+   - Testa as unidades do código trabalhando juntas.
+   - Por exemplo, testa Login que envolve uma série de etapas
+
+## Boas práticas
+1. Simples e rápido
+  * Testes simples e rápido. Isso nos possibilita ter um feedback o mais cedo possível sobre possíveis impacots das modificações feitas no software. Além disso, facilita para podermos rodas os testes várias vezes se necessário e torna mais ágil o debug dos teste, reduzindo o tempo necessário para criar e manter os cripts.
+
+2. Independentes
+  * Os testes devem ser independentes entre si. Isso evita que a falha em um teste cause falha em outros teste, o que dificulta e torna bem mais demorada a investigação de problemas. O "você do futuro" vai agradecer muito ao "você do presente" por isso.
+
+3. Ambiente
+Os testes não devem depender de ambientes ou recursos externos, como serviços, API's, banco de dados, etc. O teste deve ser capaz de rodas a qualquer momento e quantas vezes forem necessárioas.
+
+## Instalando o Jest
+https://jestjs.io/pt-BR/
+https://jestjs.io/docs/getting-started
+npm install --save-dev jest
