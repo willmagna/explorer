@@ -895,3 +895,14 @@ Os testes não devem depender de ambientes ou recursos externos, como serviços,
 https://jestjs.io/pt-BR/
 https://jestjs.io/docs/getting-started
 npm install --save-dev jest
+
+# Princípio da inversão de Dependência
+## Definição
+Módulos de alto nível, não devem depender de módulos de baixo nível. Ambos devem depender de abstrações;
+Abstrações não devem depender de detalhes. Detalhes devem depender de abstrações. (MARTIN 1996)
+## Resumindo o Objetivo
+Desacoplar e diminuir a dependência entre regra de negócio e infraestrutura.
+## Controlando o Acoplamento
+De maneira geral, será praticamente impossível criar uma aplicação onde a arquitetura seja totalemente desacoplada e abstrata, pois acoplamentos concretos sempre existirão.
+## O Segredo
+O segredo está em saber diferenciar os acoplamentos ruins dos acoplamentos bons, pois assim "modelaremos" nossos sistemas fugindo dos "acoplamentos perigoso".
