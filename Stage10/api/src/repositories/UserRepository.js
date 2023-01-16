@@ -10,11 +10,6 @@ class UserRepository {
     return user;
   }
 
-  async teste(){
-    return "teste";
-  }
-
-
   async create( {name, email, password} ){
     const database = await sqliteConnection();
 
